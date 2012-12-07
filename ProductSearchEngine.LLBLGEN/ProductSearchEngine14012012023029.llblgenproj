@@ -1,0 +1,735 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--LLBLGen Pro v3.1 project file. Do not manually edit this file. Incorrect references could lead to an unloadable project file.-->
+<Project Version="3.1" TargetFrameworkName="LLBLGen Pro Runtime Framework">
+  <Properties>
+    <Abbreviations />
+    <Property Name="AdditionalTaskPerformerFolder" Value="" />
+    <Property Name="AdditionalTasksFolder" Value="" />
+    <Property Name="AdditionalTemplatesFolder" Value="" />
+    <Property Name="AdditionalTypeConverterFolder" Value="" />
+    <Property Name="AddNewElementsAfterRefresh" Value="0" />
+    <Property Name="AddNewFieldsAfterRefresh" Value="0" />
+    <Property Name="AddNewViewsAsEntitiesAfterRefresh" Value="0" />
+    <Property Name="AutoAddManyToManyRelationships" Value="false" />
+    <Property Name="AutoAssignSequencesToIntegerPks" Value="true" />
+    <Property Name="AutoAssignTypeConverterToFieldMapping" Value="false" />
+    <Property Name="CleanUpVsNetProjects" Value="true" />
+    <Property Name="ConnectionStringKeyNamePattern" Value="ConnectionString.{$ProviderName}" />
+    <Property Name="EncodingToUse" Value="0" />
+    <Property Name="EnforcePascalCasingAlways" Value="true" />
+    <Property Name="EntityFieldNameStripPattern" Value="{}{}" />
+    <Property Name="EntityNameStripPattern" Value="{tbl_}{}" />
+    <Property Name="ExcludableOrphanedElementDetectedAction" Value="3" />
+    <Property Name="FailCodeGenerationOnWriteError" Value="false" />
+    <Property Name="FieldMappedOntoRelatedFieldPattern" Value="{$RelatedFieldName}" />
+    <Property Name="FkFieldsAreNamedAfterTargetField" Value="true" />
+    <Property Name="ForeignKeyFieldPattern" Value="{$NavigatorName}{$RelatedFieldName}" />
+    <Property Name="GroupUsage" Value="0" />
+    <Property Name="IdentifyingFieldsFollowDBPrimaryKeyConstraints" Value="0" />
+    <Property Name="InsertUnderscoreAtWordBreakCaseSensitiveDBs" Value="false" />
+    <Property Name="LengthPrecisionScaleFollowDBLengthPrecisionScale" Value="0" />
+    <Property Name="MakeElementNamePascalCasing" Value="true" />
+    <Property Name="NavigatorMappedOntoManyToManyPattern" Value="{$EndEntityName}CollectionVia{$IntermediateEntityName$S}" />
+    <Property Name="NavigatorMappedOntoOneManyToOnePattern" Value="{$EndEntityName$S}" />
+    <Property Name="NavigatorMappedOntoOneToManyPattern" Value="{$EndEntityName$P}" />
+    <Property Name="NonExcludableOrphanedElementDetectedAction" Value="3" />
+    <Property Name="PreferDecimalOverCurrencyTypes" Value="true" />
+    <Property Name="PreferNaturalCharacterTypes" Value="true" />
+    <Property Name="PreferVariableLengthTypes" Value="true" />
+    <Property Name="ProjectCreator" Value="Kaan" />
+    <Property Name="ProjectName" Value="ProductSearchEngine" />
+    <Property Name="RelationalModelDataElementNameCasingCaseSensitiveDBs" Value="3" />
+    <Property Name="RelationshipsFollowDBForeignKeyConstraints" Value="0" />
+    <Property Name="RemoveUnderscoresFromElementName" Value="true" />
+    <Property Name="RemoveUnmappedElementsAfterRefresh" Value="0" />
+    <Property Name="ResetFieldOrderBasedOnTargetOrderAtRefresh" Value="false" />
+    <Property Name="RetrieveDBCustomProperties" Value="false" />
+    <Property Name="RootNamespace" Value="" />
+    <Property Name="SequencePattern" Value="SEQ_{$EntityName}" />
+    <Property Name="SetGroupNameAfterSchemaName" Value="true" />
+    <Property Name="SetSchemaNameAfterGroupName" Value="true" />
+    <Property Name="StoredProcNameStripPattern" Value="{pr_, sp_}{}" />
+    <Property Name="StoreTimeLastGeneratedIntoProject" Value="false" />
+    <Property Name="SyncMappedElementNamesAfterRefresh" Value="0" />
+    <Property Name="SyncRelationalModelDataElementNameAfterRename" Value="0" />
+    <Property Name="SyncRenamedMappedElementNamesAfterRefresh" Value="0" />
+    <Property Name="TargetPerEntityEdgesRequireBackingFkConstraint" Value="true" />
+    <Property Name="TypedViewFieldNameStripPattern" Value="{}{}" />
+    <Property Name="TypedViewNameStripPattern" Value="{vw_}{}" />
+    <Property Name="UniqueConstraintsFollowDBUniqueConstraints" Value="0" />
+    <Property Name="UpdateCustomPropertiesAfterRefresh" Value="0" />
+    <Property Name="UseCustomFieldOrderingOnNewElements" Value="false" />
+  </Properties>
+  <TypeShortcuts />
+  <CodeGenerationCyclePreferences>
+    <OutputType Value="3">
+      <LastUsedPreferences>
+        <DestinationRootFolder Value="C:\Users\Kaan\Documents\Visual Studio 2010\Projects\ProductSearchEngine\ProductSearchEngine.Data" />
+        <FrameworkName Value="LLBLGen Pro Runtime Framework" />
+        <LanguageName Value="C#" />
+        <PlatformName Value=".NET 4.0" />
+        <PresetName Value="SD.Presets.SelfServicing.General2010" />
+        <RootNamespace Value="ProductSearchEngine" />
+        <TemplateGroup Value="SelfServicing" />
+        <TemplateBindings>
+          <Binding Name="SD.TemplateBindings.SqlServerSpecific.NET20" />
+          <Binding Name="SD.TemplateBindings.SharedTemplates.NET40" />
+          <Binding Name="SD.TemplateBindings.SharedTemplates.NET35" />
+          <Binding Name="SD.TemplateBindings.SharedTemplates.NET20" />
+          <Binding Name="SD.TemplateBindings.General" />
+        </TemplateBindings>
+      </LastUsedPreferences>
+    </OutputType>
+  </CodeGenerationCyclePreferences>
+  <CodeGenerationMetaDataDefaults>
+    <TargetElement Type="256">
+      <Defaults>
+        <Attributes>
+          <Attribute Value="Browsable($false)" />
+        </Attributes>
+      </Defaults>
+    </TargetElement>
+  </CodeGenerationMetaDataDefaults>
+  <EntityModel>
+    <ValueTypeDefinitions />
+    <EntityDefinitions>
+      <EntityDefinition Name="Brand">
+        <Fields>
+          <Field Name="Id" Type="int" IsReadOnly="true" Precision="10" IsPrimaryKey="true" />
+          <Field Name="Name" Type="string" IsOptional="true" MaxLength="250" />
+          <Field Name="PhotoUniqueName" Type="string" IsOptional="true" MaxLength="500" />
+        </Fields>
+      </EntityDefinition>
+      <EntityDefinition Name="Category">
+        <Fields>
+          <Field Name="BaseCategoryId" Type="int" IsOptional="true" Precision="10" />
+          <Field Name="Id" Type="int" IsReadOnly="true" Precision="10" IsPrimaryKey="true" />
+          <Field Name="Name" Type="string" IsOptional="true" MaxLength="250" />
+        </Fields>
+      </EntityDefinition>
+      <EntityDefinition Name="City">
+        <Fields>
+          <Field Name="Id" Type="int" IsReadOnly="true" Precision="10" IsPrimaryKey="true" />
+          <Field Name="Name" Type="string" IsOptional="true" MaxLength="250" />
+        </Fields>
+      </EntityDefinition>
+      <EntityDefinition Name="Comment">
+        <Fields>
+          <Field Name="Content" Type="string" IsOptional="true" MaxLength="1000" />
+          <Field Name="Id" Type="int" IsReadOnly="true" Precision="10" IsPrimaryKey="true" />
+          <Field Name="ProductId" Type="int" IsOptional="true" Precision="10" />
+          <Field Name="RateId" Type="int" IsOptional="true" Precision="10" />
+          <Field Name="Title" Type="string" IsOptional="true" MaxLength="250" />
+        </Fields>
+      </EntityDefinition>
+      <EntityDefinition Name="Keyword">
+        <Fields>
+          <Field Name="Id" Type="int" IsReadOnly="true" Precision="10" IsPrimaryKey="true" />
+          <Field Name="Keyword" Type="string" IsOptional="true" MaxLength="150" />
+        </Fields>
+      </EntityDefinition>
+      <EntityDefinition Name="LastViewedProduct">
+        <Fields>
+          <Field Name="Id" Type="int" IsReadOnly="true" Precision="10" IsPrimaryKey="true" />
+          <Field Name="IpAdrees" Type="string" IsOptional="true" MaxLength="150" />
+          <Field Name="ProductId" Type="int" IsOptional="true" Precision="10" />
+          <Field Name="ViewedTime" Type="datetime" IsOptional="true" />
+        </Fields>
+      </EntityDefinition>
+      <EntityDefinition Name="Membership">
+        <Fields>
+          <Field Name="Id" Type="int" IsReadOnly="true" Precision="10" IsPrimaryKey="true" />
+          <Field Name="Password" Type="string" IsOptional="true" MaxLength="500" />
+          <Field Name="RoleId" Type="int" IsOptional="true" Precision="10" />
+          <Field Name="Status" Type="bool" IsOptional="true" />
+          <Field Name="StoreInformationId" Type="int" IsOptional="true" Precision="10" />
+          <Field Name="UserName" Type="string" IsOptional="true" MaxLength="250" />
+        </Fields>
+      </EntityDefinition>
+      <EntityDefinition Name="Product">
+        <Fields>
+          <Field Name="AddedDate" Type="datetime" IsOptional="true" />
+          <Field Name="BrandId" Type="int" IsOptional="true" Precision="10" />
+          <Field Name="CategoryId" Type="int" IsOptional="true" Precision="10" />
+          <Field Name="DetailDescription" Type="string" IsOptional="true" MaxLength="2147483647" />
+          <Field Name="Id" Type="int" IsReadOnly="true" Precision="10" IsPrimaryKey="true" />
+          <Field Name="IsFreeShipping" Type="bool" IsOptional="true" />
+          <Field Name="IsNewItem" Type="bool" IsOptional="true" />
+          <Field Name="IsSliderProduct" Type="bool" IsOptional="true" />
+          <Field Name="IsSpeacialProduct" Type="bool" IsOptional="true" />
+          <Field Name="Price" Type="double" IsOptional="true" Precision="38" />
+          <Field Name="RedirectUrl" Type="string" IsOptional="true" MaxLength="500" />
+          <Field Name="Status" Type="bool" IsOptional="true" />
+          <Field Name="StoreId" Type="int" IsOptional="true" Precision="10" />
+          <Field Name="Title" Type="string" IsOptional="true" MaxLength="500" />
+        </Fields>
+      </EntityDefinition>
+      <EntityDefinition Name="ProductKeyword">
+        <Fields>
+          <Field Name="KeywordId" Type="int" Precision="10" IsPrimaryKey="true" />
+          <Field Name="ProductId" Type="int" Precision="10" IsPrimaryKey="true" />
+        </Fields>
+      </EntityDefinition>
+      <EntityDefinition Name="ProductPhoto">
+        <Fields>
+          <Field Name="Id" Type="int" IsReadOnly="true" Precision="10" IsPrimaryKey="true" />
+          <Field Name="ProductId" Type="int" Precision="10" />
+          <Field Name="UniqueName" Type="string" IsOptional="true" MaxLength="500" />
+        </Fields>
+      </EntityDefinition>
+      <EntityDefinition Name="ProductSpecification">
+        <Fields>
+          <Field Name="ProductId" Type="int" Precision="10" IsPrimaryKey="true" />
+          <Field Name="SpecificationName" Type="string" MaxLength="150" IsPrimaryKey="true" />
+          <Field Name="SpecificationValue" Type="string" IsOptional="true" MaxLength="250" />
+        </Fields>
+      </EntityDefinition>
+      <EntityDefinition Name="Rate">
+        <Fields>
+          <Field Name="Id" Type="int" IsReadOnly="true" Precision="10" IsPrimaryKey="true" />
+          <Field Name="Value" Type="int" IsOptional="true" Precision="10" />
+        </Fields>
+      </EntityDefinition>
+      <EntityDefinition Name="Role">
+        <Fields>
+          <Field Name="Id" Type="int" IsReadOnly="true" Precision="10" IsPrimaryKey="true" />
+          <Field Name="Name" Type="string" IsOptional="true" MaxLength="50" />
+        </Fields>
+      </EntityDefinition>
+      <EntityDefinition Name="Store">
+        <Fields>
+          <Field Name="Id" Type="int" IsReadOnly="true" Precision="10" IsPrimaryKey="true" />
+          <Field Name="MembershipId" Type="int" IsOptional="true" Precision="10" />
+          <Field Name="Name" Type="string" IsOptional="true" MaxLength="250" />
+        </Fields>
+      </EntityDefinition>
+      <EntityDefinition Name="StoreInformation">
+        <Fields>
+          <Field Name="Address" Type="string" IsOptional="true" MaxLength="2147483647" />
+          <Field Name="AuthorizedName" Type="string" IsOptional="true" MaxLength="250" />
+          <Field Name="CityId" Type="int" IsOptional="true" Precision="10" />
+          <Field Name="Email" Type="string" IsOptional="true" MaxLength="250" />
+          <Field Name="Id" Type="int" IsReadOnly="true" Precision="10" IsPrimaryKey="true" />
+          <Field Name="Telephone" Type="string" IsOptional="true" MaxLength="250" />
+          <Field Name="WebAddress" Type="string" IsOptional="true" MaxLength="250" />
+        </Fields>
+      </EntityDefinition>
+    </EntityDefinitions>
+    <Relationships>
+      <NormalRelationship Name="Category.Category-Category.Categories" Start=":Category" End=":Category" StartNavigator="Category" EndNavigator="Categories" Type="4" EndIsOptional="true">
+        <FieldRelationships>
+          <FieldFieldRelationship FkField="BaseCategoryId" PkField="Id" />
+        </FieldRelationships>
+      </NormalRelationship>
+      <NormalRelationship Name="Comment.Product-Product.Comments" Start=":Comment" End=":Product" StartNavigator="Product" EndNavigator="Comments" Type="4" EndIsOptional="true">
+        <FieldRelationships>
+          <FieldFieldRelationship FkField="ProductId" PkField="Id" />
+        </FieldRelationships>
+      </NormalRelationship>
+      <NormalRelationship Name="Comment.Rate-Rate.Comments" Start=":Comment" End=":Rate" StartNavigator="Rate" EndNavigator="Comments" Type="4" EndIsOptional="true">
+        <FieldRelationships>
+          <FieldFieldRelationship FkField="RateId" PkField="Id" />
+        </FieldRelationships>
+      </NormalRelationship>
+      <NormalRelationship Name="LastViewedProduct.Product-Product.LastViewedProducts" Start=":LastViewedProduct" End=":Product" StartNavigator="Product" EndNavigator="LastViewedProducts" Type="4" EndIsOptional="true">
+        <FieldRelationships>
+          <FieldFieldRelationship FkField="ProductId" PkField="Id" />
+        </FieldRelationships>
+      </NormalRelationship>
+      <NormalRelationship Name="Membership.Role-Role.Memberships" Start=":Membership" End=":Role" StartNavigator="Role" EndNavigator="Memberships" Type="4" EndIsOptional="true">
+        <FieldRelationships>
+          <FieldFieldRelationship FkField="RoleId" PkField="Id" />
+        </FieldRelationships>
+      </NormalRelationship>
+      <NormalRelationship Name="Membership.StoreInformation-StoreInformation.Memberships" Start=":Membership" End=":StoreInformation" StartNavigator="StoreInformation" EndNavigator="Memberships" Type="4" EndIsOptional="true">
+        <FieldRelationships>
+          <FieldFieldRelationship FkField="StoreInformationId" PkField="Id" />
+        </FieldRelationships>
+      </NormalRelationship>
+      <NormalRelationship Name="Product.Brand-Brand.Products" Start=":Product" End=":Brand" StartNavigator="Brand" EndNavigator="Products" Type="4" EndIsOptional="true">
+        <FieldRelationships>
+          <FieldFieldRelationship FkField="BrandId" PkField="Id" />
+        </FieldRelationships>
+      </NormalRelationship>
+      <NormalRelationship Name="Product.Category-Category.Products" Start=":Product" End=":Category" StartNavigator="Category" EndNavigator="Products" Type="4" EndIsOptional="true">
+        <FieldRelationships>
+          <FieldFieldRelationship FkField="CategoryId" PkField="Id" />
+        </FieldRelationships>
+      </NormalRelationship>
+      <NormalRelationship Name="Product.Store-Store.Products" Start=":Product" End=":Store" StartNavigator="Store" EndNavigator="Products" Type="4" EndIsOptional="true">
+        <FieldRelationships>
+          <FieldFieldRelationship FkField="StoreId" PkField="Id" />
+        </FieldRelationships>
+      </NormalRelationship>
+      <NormalRelationship Name="ProductKeyword.Keyword-Keyword.ProductKeywords" Start=":ProductKeyword" End=":Keyword" StartNavigator="Keyword" EndNavigator="ProductKeywords" Type="4">
+        <FieldRelationships>
+          <FieldFieldRelationship FkField="KeywordId" PkField="Id" />
+        </FieldRelationships>
+      </NormalRelationship>
+      <NormalRelationship Name="ProductKeyword.Product-Product.ProductKeywords" Start=":ProductKeyword" End=":Product" StartNavigator="Product" EndNavigator="ProductKeywords" Type="4">
+        <FieldRelationships>
+          <FieldFieldRelationship FkField="ProductId" PkField="Id" />
+        </FieldRelationships>
+      </NormalRelationship>
+      <NormalRelationship Name="ProductPhoto.Product-Product.ProductPhotos" Start=":ProductPhoto" End=":Product" StartNavigator="Product" EndNavigator="ProductPhotos" Type="4">
+        <FieldRelationships>
+          <FieldFieldRelationship FkField="ProductId" PkField="Id" />
+        </FieldRelationships>
+      </NormalRelationship>
+      <NormalRelationship Name="ProductSpecification.Product-Product.ProductSpecifications" Start=":ProductSpecification" End=":Product" StartNavigator="Product" EndNavigator="ProductSpecifications" Type="4">
+        <FieldRelationships>
+          <FieldFieldRelationship FkField="ProductId" PkField="Id" />
+        </FieldRelationships>
+      </NormalRelationship>
+      <NormalRelationship Name="Store.Membership-Membership.Stores" Start=":Store" End=":Membership" StartNavigator="Membership" EndNavigator="Stores" Type="4" EndIsOptional="true">
+        <FieldRelationships>
+          <FieldFieldRelationship FkField="MembershipId" PkField="Id" />
+        </FieldRelationships>
+      </NormalRelationship>
+      <NormalRelationship Name="StoreInformation.City-City.StoreInformations" Start=":StoreInformation" End=":City" StartNavigator="City" EndNavigator="StoreInformations" Type="4" EndIsOptional="true">
+        <FieldRelationships>
+          <FieldFieldRelationship FkField="CityId" PkField="Id" />
+        </FieldRelationships>
+      </NormalRelationship>
+    </Relationships>
+    <InheritanceHierarchies />
+  </EntityModel>
+  <TargetDatabases>
+    <TargetDatabase Type="2D18D138-1DD2-467E-86CC-4838250611AE">
+      <ConnectionElements>
+        <ConnectionElement Name="ServerName" Value="." />
+        <ConnectionElement Name="CatalogName" Value="master" />
+        <ConnectionElement Name="UserID" Value="sa" />
+        <ConnectionElement Name="Password" Value="" />
+      </ConnectionElements>
+      <SystemSequences>
+        <Sequence Name="SCOPE_IDENTITY()" />
+        <Sequence Name="@@IDENTITY" />
+      </SystemSequences>
+      <Catalogs>
+        <Catalog Name="ProductSearchEngine">
+          <Schemas>
+            <Schema Name="dbo">
+              <Tables>
+                <Table Name="Brand">
+                  <Fields>
+                    <Field Name="Id" Ordinal="1" IsIdentity="true" IsPrimaryKey="true" PkConstraintName="PK_Brand" DbType="8" Precision="10" />
+                    <Field Name="Name" Ordinal="2" IsOptional="true" DbType="12" Length="250" />
+                    <Field Name="PhotoUniqueName" Ordinal="3" IsOptional="true" DbType="12" Length="500" />
+                  </Fields>
+                </Table>
+                <Table Name="Category">
+                  <Fields>
+                    <Field Name="Id" Ordinal="1" IsIdentity="true" IsPrimaryKey="true" PkConstraintName="PK_Category" DbType="8" Precision="10" />
+                    <Field Name="BaseCategoryId" Ordinal="2" IsOptional="true" DbType="8" Precision="10" />
+                    <Field Name="Name" Ordinal="3" IsOptional="true" DbType="12" Length="250" />
+                  </Fields>
+                </Table>
+                <Table Name="City">
+                  <Fields>
+                    <Field Name="Id" Ordinal="1" IsIdentity="true" IsPrimaryKey="true" PkConstraintName="PK_City" DbType="8" Precision="10" />
+                    <Field Name="Name" Ordinal="2" IsOptional="true" DbType="12" Length="250" />
+                  </Fields>
+                </Table>
+                <Table Name="Comment">
+                  <Fields>
+                    <Field Name="Id" Ordinal="1" IsIdentity="true" IsPrimaryKey="true" PkConstraintName="PK_Comment" DbType="8" Precision="10" />
+                    <Field Name="ProductId" Ordinal="2" IsOptional="true" DbType="8" Precision="10" />
+                    <Field Name="Title" Ordinal="3" IsOptional="true" DbType="12" Length="250" />
+                    <Field Name="Content" Ordinal="4" IsOptional="true" DbType="12" Length="1000" />
+                    <Field Name="RateId" Ordinal="5" IsOptional="true" DbType="8" Precision="10" />
+                  </Fields>
+                </Table>
+                <Table Name="Keyword">
+                  <Fields>
+                    <Field Name="Id" Ordinal="1" IsIdentity="true" IsPrimaryKey="true" PkConstraintName="PK_Keyword" DbType="8" Precision="10" />
+                    <Field Name="Keyword" Ordinal="2" IsOptional="true" DbType="12" Length="150" />
+                  </Fields>
+                </Table>
+                <Table Name="LastViewedProduct">
+                  <Fields>
+                    <Field Name="Id" Ordinal="1" IsIdentity="true" IsPrimaryKey="true" PkConstraintName="PK_LastViewedProduct" DbType="8" Precision="10" />
+                    <Field Name="ProductId" Ordinal="2" IsOptional="true" DbType="8" Precision="10" />
+                    <Field Name="ViewedTime" Ordinal="3" IsOptional="true" DbType="4" />
+                    <Field Name="IpAdrees" Ordinal="4" IsOptional="true" DbType="12" Length="150" />
+                  </Fields>
+                </Table>
+                <Table Name="Membership">
+                  <Fields>
+                    <Field Name="Id" Ordinal="1" IsIdentity="true" IsPrimaryKey="true" PkConstraintName="PK_Membership" DbType="8" Precision="10" />
+                    <Field Name="UserName" Ordinal="2" IsOptional="true" DbType="12" Length="250" />
+                    <Field Name="Password" Ordinal="3" IsOptional="true" DbType="12" Length="500" />
+                    <Field Name="StoreInformationId" Ordinal="4" IsOptional="true" DbType="8" Precision="10" />
+                    <Field Name="RoleId" Ordinal="5" IsOptional="true" DbType="8" Precision="10" />
+                    <Field Name="Status" Ordinal="6" IsOptional="true" DbType="2" />
+                  </Fields>
+                </Table>
+                <Table Name="Product">
+                  <Fields>
+                    <Field Name="Id" Ordinal="1" IsIdentity="true" IsPrimaryKey="true" PkConstraintName="PK_Product" DbType="8" Precision="10" />
+                    <Field Name="CategoryId" Ordinal="2" IsOptional="true" DbType="8" Precision="10" />
+                    <Field Name="StoreId" Ordinal="3" IsOptional="true" DbType="8" Precision="10" />
+                    <Field Name="Title" Ordinal="4" IsOptional="true" DbType="12" Length="500" />
+                    <Field Name="DetailDescription" Ordinal="5" IsOptional="true" DbType="12" Length="2147483647" />
+                    <Field Name="Price" Ordinal="6" IsOptional="true" DbType="6" Precision="38" />
+                    <Field Name="BrandId" Ordinal="7" IsOptional="true" DbType="8" Precision="10" />
+                    <Field Name="AddedDate" Ordinal="8" IsOptional="true" DbType="4" />
+                    <Field Name="Status" Ordinal="9" IsOptional="true" DbType="2" />
+                    <Field Name="IsNewItem" Ordinal="10" IsOptional="true" DbType="2" />
+                    <Field Name="IsFreeShipping" Ordinal="11" IsOptional="true" DbType="2" />
+                    <Field Name="IsSliderProduct" Ordinal="12" IsOptional="true" DbType="2" />
+                    <Field Name="IsSpeacialProduct" Ordinal="13" IsOptional="true" DbType="2" />
+                    <Field Name="RedirectUrl" Ordinal="14" IsOptional="true" DbType="12" Length="500" />
+                  </Fields>
+                </Table>
+                <Table Name="ProductKeyword">
+                  <Fields>
+                    <Field Name="ProductId" Ordinal="1" IsPrimaryKey="true" PkConstraintName="PK_ProductKeyword_1" DbType="8" Precision="10" />
+                    <Field Name="KeywordId" Ordinal="2" IsPrimaryKey="true" PkConstraintName="PK_ProductKeyword_1" DbType="8" Precision="10" />
+                  </Fields>
+                </Table>
+                <Table Name="ProductPhoto">
+                  <Fields>
+                    <Field Name="Id" Ordinal="1" IsIdentity="true" IsPrimaryKey="true" PkConstraintName="PK_ProductPhoto" DbType="8" Precision="10" />
+                    <Field Name="ProductId" Ordinal="2" DbType="8" Precision="10" />
+                    <Field Name="UniqueName" Ordinal="3" IsOptional="true" DbType="12" Length="500" />
+                  </Fields>
+                </Table>
+                <Table Name="ProductSpecification">
+                  <Fields>
+                    <Field Name="ProductId" Ordinal="1" IsPrimaryKey="true" PkConstraintName="PK_ProductSpec" DbType="8" Precision="10" />
+                    <Field Name="SpecificationName" Ordinal="2" IsPrimaryKey="true" PkConstraintName="PK_ProductSpec" DbType="12" Length="150" />
+                    <Field Name="SpecificationValue" Ordinal="3" IsOptional="true" DbType="12" Length="250" />
+                  </Fields>
+                </Table>
+                <Table Name="Rate">
+                  <Fields>
+                    <Field Name="Id" Ordinal="1" IsIdentity="true" IsPrimaryKey="true" PkConstraintName="PK_Rate" DbType="8" Precision="10" />
+                    <Field Name="Value" Ordinal="2" IsOptional="true" DbType="8" Precision="10" />
+                  </Fields>
+                </Table>
+                <Table Name="Role">
+                  <Fields>
+                    <Field Name="Id" Ordinal="1" IsIdentity="true" IsPrimaryKey="true" PkConstraintName="PK_Role" DbType="8" Precision="10" />
+                    <Field Name="Name" Ordinal="2" IsOptional="true" DbType="12" Length="50" />
+                  </Fields>
+                </Table>
+                <Table Name="Store">
+                  <Fields>
+                    <Field Name="Id" Ordinal="1" IsIdentity="true" IsPrimaryKey="true" PkConstraintName="PK_Store" DbType="8" Precision="10" />
+                    <Field Name="Name" Ordinal="2" IsOptional="true" DbType="12" Length="250" />
+                    <Field Name="MembershipId" Ordinal="3" IsOptional="true" DbType="8" Precision="10" />
+                  </Fields>
+                </Table>
+                <Table Name="StoreInformation">
+                  <Fields>
+                    <Field Name="Id" Ordinal="1" IsIdentity="true" IsPrimaryKey="true" PkConstraintName="PK_StoreInformation" DbType="8" Precision="10" />
+                    <Field Name="AuthorizedName" Ordinal="2" IsOptional="true" DbType="12" Length="250" />
+                    <Field Name="Address" Ordinal="3" IsOptional="true" DbType="12" Length="2147483647" />
+                    <Field Name="Telephone" Ordinal="4" IsOptional="true" DbType="12" Length="250" />
+                    <Field Name="Email" Ordinal="5" IsOptional="true" DbType="12" Length="250" />
+                    <Field Name="WebAddress" Ordinal="6" IsOptional="true" DbType="12" Length="250" />
+                    <Field Name="CityId" Ordinal="7" IsOptional="true" DbType="8" Precision="10" />
+                  </Fields>
+                </Table>
+              </Tables>
+              <StoredProcedures>
+                <StoredProcedure Name="sp_alterdiagram">
+                  <Parameters>
+                    <Parameter Name="@diagramname" Direction="1" Ordinal="1" DbType="12" Length="128" />
+                    <Parameter Name="@owner_id" Direction="1" Ordinal="2" DbType="8" Precision="10" />
+                    <Parameter Name="@version" Direction="1" Ordinal="3" DbType="8" Precision="10" />
+                    <Parameter Name="@definition" Direction="1" Ordinal="4" DbType="23" Length="2147483647" />
+                  </Parameters>
+                  <CustomProperties>
+                    <CustomProperty Name="microsoft_database_tools_support" Value="1" />
+                  </CustomProperties>
+                </StoredProcedure>
+                <StoredProcedure Name="sp_creatediagram">
+                  <Parameters>
+                    <Parameter Name="@diagramname" Direction="1" Ordinal="1" DbType="12" Length="128" />
+                    <Parameter Name="@owner_id" Direction="1" Ordinal="2" DbType="8" Precision="10" />
+                    <Parameter Name="@version" Direction="1" Ordinal="3" DbType="8" Precision="10" />
+                    <Parameter Name="@definition" Direction="1" Ordinal="4" DbType="23" Length="2147483647" />
+                  </Parameters>
+                  <CustomProperties>
+                    <CustomProperty Name="microsoft_database_tools_support" Value="1" />
+                  </CustomProperties>
+                </StoredProcedure>
+                <StoredProcedure Name="sp_dropdiagram">
+                  <Parameters>
+                    <Parameter Name="@diagramname" Direction="1" Ordinal="1" DbType="12" Length="128" />
+                    <Parameter Name="@owner_id" Direction="1" Ordinal="2" DbType="8" Precision="10" />
+                  </Parameters>
+                  <CustomProperties>
+                    <CustomProperty Name="microsoft_database_tools_support" Value="1" />
+                  </CustomProperties>
+                </StoredProcedure>
+                <StoredProcedure Name="sp_helpdiagramdefinition" NumberOfResultsets="1">
+                  <Parameters>
+                    <Parameter Name="@diagramname" Direction="1" Ordinal="1" DbType="12" Length="128" />
+                    <Parameter Name="@owner_id" Direction="1" Ordinal="2" DbType="8" Precision="10" />
+                  </Parameters>
+                  <Resultsets>
+                    <Resultset Name="Resultset1">
+                      <Fields>
+                        <Field Name="version" Ordinal="1" IsOptional="true" DbType="8" Precision="10" />
+                        <Field Name="definition" Ordinal="2" IsOptional="true" DbType="23" Length="2147483647" />
+                      </Fields>
+                    </Resultset>
+                  </Resultsets>
+                  <CustomProperties>
+                    <CustomProperty Name="microsoft_database_tools_support" Value="1" />
+                  </CustomProperties>
+                </StoredProcedure>
+                <StoredProcedure Name="sp_helpdiagrams" NumberOfResultsets="1">
+                  <Parameters>
+                    <Parameter Name="@diagramname" Direction="1" Ordinal="1" DbType="12" Length="128" />
+                    <Parameter Name="@owner_id" Direction="1" Ordinal="2" DbType="8" Precision="10" />
+                  </Parameters>
+                  <Resultsets>
+                    <Resultset Name="Resultset1">
+                      <Fields>
+                        <Field Name="Database" Ordinal="1" IsOptional="true" DbType="12" Length="128" />
+                        <Field Name="Name" Ordinal="2" DbType="12" Length="128" />
+                        <Field Name="ID" Ordinal="3" DbType="8" Precision="10" />
+                        <Field Name="Owner" Ordinal="4" IsOptional="true" DbType="12" Length="128" />
+                        <Field Name="OwnerID" Ordinal="5" DbType="8" Precision="10" />
+                      </Fields>
+                    </Resultset>
+                  </Resultsets>
+                  <CustomProperties>
+                    <CustomProperty Name="microsoft_database_tools_support" Value="1" />
+                  </CustomProperties>
+                </StoredProcedure>
+                <StoredProcedure Name="sp_renamediagram">
+                  <Parameters>
+                    <Parameter Name="@diagramname" Direction="1" Ordinal="1" DbType="12" Length="128" />
+                    <Parameter Name="@owner_id" Direction="1" Ordinal="2" DbType="8" Precision="10" />
+                    <Parameter Name="@new_diagramname" Direction="1" Ordinal="3" DbType="12" Length="128" />
+                  </Parameters>
+                  <CustomProperties>
+                    <CustomProperty Name="microsoft_database_tools_support" Value="1" />
+                  </CustomProperties>
+                </StoredProcedure>
+                <StoredProcedure Name="sp_upgraddiagrams">
+                  <CustomProperties>
+                    <CustomProperty Name="microsoft_database_tools_support" Value="1" />
+                  </CustomProperties>
+                </StoredProcedure>
+              </StoredProcedures>
+            </Schema>
+          </Schemas>
+          <ForeignKeyConstraints>
+            <ForeignKeyConstraint Name="dbo:Category:FK_Category_Category">
+              <FieldPairs>
+                <FieldPair PkField="dbo:Category:Id" FkField="dbo:Category:BaseCategoryId" />
+              </FieldPairs>
+            </ForeignKeyConstraint>
+            <ForeignKeyConstraint Name="dbo:Comment:FK_Comment_Product">
+              <FieldPairs>
+                <FieldPair PkField="dbo:Product:Id" FkField="dbo:Comment:ProductId" />
+              </FieldPairs>
+            </ForeignKeyConstraint>
+            <ForeignKeyConstraint Name="dbo:Comment:FK_Comment_Rate">
+              <FieldPairs>
+                <FieldPair PkField="dbo:Rate:Id" FkField="dbo:Comment:RateId" />
+              </FieldPairs>
+            </ForeignKeyConstraint>
+            <ForeignKeyConstraint Name="dbo:LastViewedProduct:FK_LastViewedProduct_Product">
+              <FieldPairs>
+                <FieldPair PkField="dbo:Product:Id" FkField="dbo:LastViewedProduct:ProductId" />
+              </FieldPairs>
+            </ForeignKeyConstraint>
+            <ForeignKeyConstraint Name="dbo:Membership:FK_Membership_Role">
+              <FieldPairs>
+                <FieldPair PkField="dbo:Role:Id" FkField="dbo:Membership:RoleId" />
+              </FieldPairs>
+            </ForeignKeyConstraint>
+            <ForeignKeyConstraint Name="dbo:Membership:FK_Membership_StoreInformation">
+              <FieldPairs>
+                <FieldPair PkField="dbo:StoreInformation:Id" FkField="dbo:Membership:StoreInformationId" />
+              </FieldPairs>
+            </ForeignKeyConstraint>
+            <ForeignKeyConstraint Name="dbo:Product:FK_Product_Brand">
+              <FieldPairs>
+                <FieldPair PkField="dbo:Brand:Id" FkField="dbo:Product:BrandId" />
+              </FieldPairs>
+            </ForeignKeyConstraint>
+            <ForeignKeyConstraint Name="dbo:Product:FK_Product_Category">
+              <FieldPairs>
+                <FieldPair PkField="dbo:Category:Id" FkField="dbo:Product:CategoryId" />
+              </FieldPairs>
+            </ForeignKeyConstraint>
+            <ForeignKeyConstraint Name="dbo:Product:FK_Product_Store">
+              <FieldPairs>
+                <FieldPair PkField="dbo:Store:Id" FkField="dbo:Product:StoreId" />
+              </FieldPairs>
+            </ForeignKeyConstraint>
+            <ForeignKeyConstraint Name="dbo:ProductKeyword:FK_ProductKeyword_Keyword">
+              <FieldPairs>
+                <FieldPair PkField="dbo:Keyword:Id" FkField="dbo:ProductKeyword:KeywordId" />
+              </FieldPairs>
+            </ForeignKeyConstraint>
+            <ForeignKeyConstraint Name="dbo:ProductKeyword:FK_ProductKeyword_Product">
+              <FieldPairs>
+                <FieldPair PkField="dbo:Product:Id" FkField="dbo:ProductKeyword:ProductId" />
+              </FieldPairs>
+            </ForeignKeyConstraint>
+            <ForeignKeyConstraint Name="dbo:ProductPhoto:FK_ProductPhoto_Product">
+              <FieldPairs>
+                <FieldPair PkField="dbo:Product:Id" FkField="dbo:ProductPhoto:ProductId" />
+              </FieldPairs>
+            </ForeignKeyConstraint>
+            <ForeignKeyConstraint Name="dbo:ProductSpecification:FK_ProductSpec_Product">
+              <FieldPairs>
+                <FieldPair PkField="dbo:Product:Id" FkField="dbo:ProductSpecification:ProductId" />
+              </FieldPairs>
+            </ForeignKeyConstraint>
+            <ForeignKeyConstraint Name="dbo:Store:FK_Store_Membership">
+              <FieldPairs>
+                <FieldPair PkField="dbo:Membership:Id" FkField="dbo:Store:MembershipId" />
+              </FieldPairs>
+            </ForeignKeyConstraint>
+            <ForeignKeyConstraint Name="dbo:StoreInformation:FK_StoreInformation_City">
+              <FieldPairs>
+                <FieldPair PkField="dbo:City:Id" FkField="dbo:StoreInformation:CityId" />
+              </FieldPairs>
+            </ForeignKeyConstraint>
+          </ForeignKeyConstraints>
+        </Catalog>
+      </Catalogs>
+    </TargetDatabase>
+  </TargetDatabases>
+  <MappingStores>
+    <MappingStore Type="2D18D138-1DD2-467E-86CC-4838250611AE">
+      <EntityMappings>
+        <EntityMapping EntityName=":Brand" TargetName="ProductSearchEngine:dbo:Brand">
+          <FieldMappings>
+            <FieldMapping FieldName="Id" TargetFieldName="Id" SequenceToUse="SCOPE_IDENTITY()" />
+            <FieldMapping FieldName="Name" TargetFieldName="Name" />
+            <FieldMapping FieldName="PhotoUniqueName" TargetFieldName="PhotoUniqueName" />
+          </FieldMappings>
+        </EntityMapping>
+        <EntityMapping EntityName=":Category" TargetName="ProductSearchEngine:dbo:Category">
+          <FieldMappings>
+            <FieldMapping FieldName="BaseCategoryId" TargetFieldName="BaseCategoryId" />
+            <FieldMapping FieldName="Id" TargetFieldName="Id" SequenceToUse="SCOPE_IDENTITY()" />
+            <FieldMapping FieldName="Name" TargetFieldName="Name" />
+          </FieldMappings>
+        </EntityMapping>
+        <EntityMapping EntityName=":City" TargetName="ProductSearchEngine:dbo:City">
+          <FieldMappings>
+            <FieldMapping FieldName="Id" TargetFieldName="Id" SequenceToUse="SCOPE_IDENTITY()" />
+            <FieldMapping FieldName="Name" TargetFieldName="Name" />
+          </FieldMappings>
+        </EntityMapping>
+        <EntityMapping EntityName=":Comment" TargetName="ProductSearchEngine:dbo:Comment">
+          <FieldMappings>
+            <FieldMapping FieldName="Content" TargetFieldName="Content" />
+            <FieldMapping FieldName="Id" TargetFieldName="Id" SequenceToUse="SCOPE_IDENTITY()" />
+            <FieldMapping FieldName="ProductId" TargetFieldName="ProductId" />
+            <FieldMapping FieldName="RateId" TargetFieldName="RateId" />
+            <FieldMapping FieldName="Title" TargetFieldName="Title" />
+          </FieldMappings>
+        </EntityMapping>
+        <EntityMapping EntityName=":Keyword" TargetName="ProductSearchEngine:dbo:Keyword">
+          <FieldMappings>
+            <FieldMapping FieldName="Id" TargetFieldName="Id" SequenceToUse="SCOPE_IDENTITY()" />
+            <FieldMapping FieldName="Keyword" TargetFieldName="Keyword" />
+          </FieldMappings>
+        </EntityMapping>
+        <EntityMapping EntityName=":LastViewedProduct" TargetName="ProductSearchEngine:dbo:LastViewedProduct">
+          <FieldMappings>
+            <FieldMapping FieldName="Id" TargetFieldName="Id" SequenceToUse="SCOPE_IDENTITY()" />
+            <FieldMapping FieldName="IpAdrees" TargetFieldName="IpAdrees" />
+            <FieldMapping FieldName="ProductId" TargetFieldName="ProductId" />
+            <FieldMapping FieldName="ViewedTime" TargetFieldName="ViewedTime" />
+          </FieldMappings>
+        </EntityMapping>
+        <EntityMapping EntityName=":Membership" TargetName="ProductSearchEngine:dbo:Membership">
+          <FieldMappings>
+            <FieldMapping FieldName="Id" TargetFieldName="Id" SequenceToUse="SCOPE_IDENTITY()" />
+            <FieldMapping FieldName="Password" TargetFieldName="Password" />
+            <FieldMapping FieldName="RoleId" TargetFieldName="RoleId" />
+            <FieldMapping FieldName="Status" TargetFieldName="Status" />
+            <FieldMapping FieldName="StoreInformationId" TargetFieldName="StoreInformationId" />
+            <FieldMapping FieldName="UserName" TargetFieldName="UserName" />
+          </FieldMappings>
+        </EntityMapping>
+        <EntityMapping EntityName=":Product" TargetName="ProductSearchEngine:dbo:Product">
+          <FieldMappings>
+            <FieldMapping FieldName="AddedDate" TargetFieldName="AddedDate" />
+            <FieldMapping FieldName="BrandId" TargetFieldName="BrandId" />
+            <FieldMapping FieldName="CategoryId" TargetFieldName="CategoryId" />
+            <FieldMapping FieldName="DetailDescription" TargetFieldName="DetailDescription" />
+            <FieldMapping FieldName="Id" TargetFieldName="Id" SequenceToUse="SCOPE_IDENTITY()" />
+            <FieldMapping FieldName="IsFreeShipping" TargetFieldName="IsFreeShipping" />
+            <FieldMapping FieldName="IsNewItem" TargetFieldName="IsNewItem" />
+            <FieldMapping FieldName="IsSliderProduct" TargetFieldName="IsSliderProduct" />
+            <FieldMapping FieldName="IsSpeacialProduct" TargetFieldName="IsSpeacialProduct" />
+            <FieldMapping FieldName="Price" TargetFieldName="Price" />
+            <FieldMapping FieldName="RedirectUrl" TargetFieldName="RedirectUrl" />
+            <FieldMapping FieldName="Status" TargetFieldName="Status" />
+            <FieldMapping FieldName="StoreId" TargetFieldName="StoreId" />
+            <FieldMapping FieldName="Title" TargetFieldName="Title" />
+          </FieldMappings>
+        </EntityMapping>
+        <EntityMapping EntityName=":ProductKeyword" TargetName="ProductSearchEngine:dbo:ProductKeyword">
+          <FieldMappings>
+            <FieldMapping FieldName="KeywordId" TargetFieldName="KeywordId" />
+            <FieldMapping FieldName="ProductId" TargetFieldName="ProductId" />
+          </FieldMappings>
+        </EntityMapping>
+        <EntityMapping EntityName=":ProductPhoto" TargetName="ProductSearchEngine:dbo:ProductPhoto">
+          <FieldMappings>
+            <FieldMapping FieldName="Id" TargetFieldName="Id" SequenceToUse="SCOPE_IDENTITY()" />
+            <FieldMapping FieldName="ProductId" TargetFieldName="ProductId" />
+            <FieldMapping FieldName="UniqueName" TargetFieldName="UniqueName" />
+          </FieldMappings>
+        </EntityMapping>
+        <EntityMapping EntityName=":ProductSpecification" TargetName="ProductSearchEngine:dbo:ProductSpecification">
+          <FieldMappings>
+            <FieldMapping FieldName="ProductId" TargetFieldName="ProductId" />
+            <FieldMapping FieldName="SpecificationName" TargetFieldName="SpecificationName" />
+            <FieldMapping FieldName="SpecificationValue" TargetFieldName="SpecificationValue" />
+          </FieldMappings>
+        </EntityMapping>
+        <EntityMapping EntityName=":Rate" TargetName="ProductSearchEngine:dbo:Rate">
+          <FieldMappings>
+            <FieldMapping FieldName="Id" TargetFieldName="Id" SequenceToUse="SCOPE_IDENTITY()" />
+            <FieldMapping FieldName="Value" TargetFieldName="Value" />
+          </FieldMappings>
+        </EntityMapping>
+        <EntityMapping EntityName=":Role" TargetName="ProductSearchEngine:dbo:Role">
+          <FieldMappings>
+            <FieldMapping FieldName="Id" TargetFieldName="Id" SequenceToUse="SCOPE_IDENTITY()" />
+            <FieldMapping FieldName="Name" TargetFieldName="Name" />
+          </FieldMappings>
+        </EntityMapping>
+        <EntityMapping EntityName=":Store" TargetName="ProductSearchEngine:dbo:Store">
+          <FieldMappings>
+            <FieldMapping FieldName="Id" TargetFieldName="Id" SequenceToUse="SCOPE_IDENTITY()" />
+            <FieldMapping FieldName="MembershipId" TargetFieldName="MembershipId" />
+            <FieldMapping FieldName="Name" TargetFieldName="Name" />
+          </FieldMappings>
+        </EntityMapping>
+        <EntityMapping EntityName=":StoreInformation" TargetName="ProductSearchEngine:dbo:StoreInformation">
+          <FieldMappings>
+            <FieldMapping FieldName="Address" TargetFieldName="Address" />
+            <FieldMapping FieldName="AuthorizedName" TargetFieldName="AuthorizedName" />
+            <FieldMapping FieldName="CityId" TargetFieldName="CityId" />
+            <FieldMapping FieldName="Email" TargetFieldName="Email" />
+            <FieldMapping FieldName="Id" TargetFieldName="Id" SequenceToUse="SCOPE_IDENTITY()" />
+            <FieldMapping FieldName="Telephone" TargetFieldName="Telephone" />
+            <FieldMapping FieldName="WebAddress" TargetFieldName="WebAddress" />
+          </FieldMappings>
+        </EntityMapping>
+      </EntityMappings>
+      <TypedViewMappings />
+      <SPCallMappings />
+      <TypeConversionDefinitions />
+    </MappingStore>
+  </MappingStores>
+  <ModelViews />
+</Project>

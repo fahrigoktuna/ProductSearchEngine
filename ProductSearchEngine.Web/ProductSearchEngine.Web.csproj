@@ -1,0 +1,532 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8E302348-BA0F-48F1-A5D5-D8C5FF4C042F}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ProductSearchEngine.Web</RootNamespace>
+    <AssemblyName>ProductSearchEngine.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="ProductSearchEngine">
+      <HintPath>..\PublicDlls\ProductSearchEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="SD.LLBLGen.Pro.ORMSupportClasses.NET20, Version=3.1.0.0, Culture=neutral, PublicKeyToken=ca73b74ba4e3ff27, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\PublicDlls\SD.LLBLGen.Pro.ORMSupportClasses.NET20.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\fonts\Babel\BabelSans.svg" />
+    <Content Include="Assets\fonts\Babel\licence.txt" />
+    <Content Include="Assets\fonts\Ubuntu\stylesheet.css" />
+    <Content Include="Assets\fonts\Ubuntu\Ubuntu Font License 1.0.txt" />
+    <Content Include="Assets\fonts\Ubuntu\Ubuntu-B-webfont.svg" />
+    <Content Include="Assets\fonts\Ubuntu\Ubuntu-BI-webfont.svg" />
+    <Content Include="Assets\fonts\Ubuntu\Ubuntu-I-webfont.svg" />
+    <Content Include="Assets\fonts\Ubuntu\Ubuntu-R-webfont.svg" />
+    <Content Include="Assets\images\add_to_cart.png" />
+    <Content Include="Assets\images\banner_1.jpg" />
+    <Content Include="Assets\images\banner_4.jpg" />
+    <Content Include="Assets\images\bullet_1.gif" />
+    <Content Include="Assets\images\bullet_1.png" />
+    <Content Include="Assets\images\button_remove_10.png" />
+    <Content Include="Assets\images\category_100x100.jpg" />
+    <Content Include="Assets\images\colorpicker\blank.gif" />
+    <Content Include="Assets\images\colorpicker\colorpicker_background.png" />
+    <Content Include="Assets\images\colorpicker\colorpicker_hex.png" />
+    <Content Include="Assets\images\colorpicker\colorpicker_hsb_b.png" />
+    <Content Include="Assets\images\colorpicker\colorpicker_hsb_h.png" />
+    <Content Include="Assets\images\colorpicker\colorpicker_hsb_s.png" />
+    <Content Include="Assets\images\colorpicker\colorpicker_indic.gif" />
+    <Content Include="Assets\images\colorpicker\colorpicker_overlay.png" />
+    <Content Include="Assets\images\colorpicker\colorpicker_rgb_b.png" />
+    <Content Include="Assets\images\colorpicker\colorpicker_rgb_g.png" />
+    <Content Include="Assets\images\colorpicker\colorpicker_rgb_r.png" />
+    <Content Include="Assets\images\colorpicker\colorpicker_select.gif" />
+    <Content Include="Assets\images\colorpicker\colorpicker_submit.png" />
+    <Content Include="Assets\images\colorpicker\color_select.png" />
+    <Content Include="Assets\images\colorpicker\custom_background.png" />
+    <Content Include="Assets\images\colorpicker\custom_hex.png" />
+    <Content Include="Assets\images\colorpicker\custom_hsb_b.png" />
+    <Content Include="Assets\images\colorpicker\custom_hsb_h.png" />
+    <Content Include="Assets\images\colorpicker\custom_hsb_s.png" />
+    <Content Include="Assets\images\colorpicker\custom_indic.gif" />
+    <Content Include="Assets\images\colorpicker\custom_rgb_b.png" />
+    <Content Include="Assets\images\colorpicker\custom_rgb_g.png" />
+    <Content Include="Assets\images\colorpicker\custom_rgb_r.png" />
+    <Content Include="Assets\images\colorpicker\custom_submit.png" />
+    <Content Include="Assets\images\colorpicker\select.png" />
+    <Content Include="Assets\images\colorpicker\select2.png" />
+    <Content Include="Assets\images\colorpicker\slider.png" />
+    <Content Include="Assets\images\contact_form_icon.png" />
+    <Content Include="Assets\images\cp\button_default.png" />
+    <Content Include="Assets\images\cp\button_default_hover.png" />
+    <Content Include="Assets\images\cp\panel.jpg" />
+    <Content Include="Assets\images\cp\panel_bgr.jpg" />
+    <Content Include="Assets\images\cp\panel_bgr.png" />
+    <Content Include="Assets\images\cp\panel_close.png" />
+    <Content Include="Assets\images\cp\panel_header.png" />
+    <Content Include="Assets\images\cp\panel_header_closed.png" />
+    <Content Include="Assets\images\cp\panel_highlight.jpg" />
+    <Content Include="Assets\images\cp\panel_section.png" />
+    <Content Include="Assets\images\cp\panel_show.png" />
+    <Content Include="Assets\images\cp\themeburn.com_logo.png" />
+    <Content Include="Assets\images\dropdown.gif" />
+    <Content Include="Assets\images\dummy\banner_1.jpg" />
+    <Content Include="Assets\images\dummy\banner_2.jpg" />
+    <Content Include="Assets\images\dummy\banner_3.jpg" />
+    <Content Include="Assets\images\dummy\banner_4.jpg" />
+    <Content Include="Assets\images\dummy\slide_1.png" />
+    <Content Include="Assets\images\dummy\slide_2.png" />
+    <Content Include="Assets\images\dummy\slide_3.png" />
+    <Content Include="Assets\images\fb_like.png" />
+    <Content Include="Assets\images\flags\ad.png" />
+    <Content Include="Assets\images\flags\af.png" />
+    <Content Include="Assets\images\flags\ag.png" />
+    <Content Include="Assets\images\flags\ai.png" />
+    <Content Include="Assets\images\flags\al.png" />
+    <Content Include="Assets\images\flags\am.png" />
+    <Content Include="Assets\images\flags\ar.png" />
+    <Content Include="Assets\images\flags\at.png" />
+    <Content Include="Assets\images\flags\be.png" />
+    <Content Include="Assets\images\flags\bg.png" />
+    <Content Include="Assets\images\flags\br.png" />
+    <Content Include="Assets\images\flags\ca.png" />
+    <Content Include="Assets\images\flags\ch.png" />
+    <Content Include="Assets\images\flags\ci.png" />
+    <Content Include="Assets\images\flags\cl.png" />
+    <Content Include="Assets\images\flags\cn.png" />
+    <Content Include="Assets\images\flags\co.png" />
+    <Content Include="Assets\images\flags\cz.png" />
+    <Content Include="Assets\images\flags\de.png" />
+    <Content Include="Assets\images\flags\dk.png" />
+    <Content Include="Assets\images\flags\ec.png" />
+    <Content Include="Assets\images\flags\ee.png" />
+    <Content Include="Assets\images\flags\eg.png" />
+    <Content Include="Assets\images\flags\es.png" />
+    <Content Include="Assets\images\flags\fi.png" />
+    <Content Include="Assets\images\flags\fr.png" />
+    <Content Include="Assets\images\flags\gb.png" />
+    <Content Include="Assets\images\flags\ge.png" />
+    <Content Include="Assets\images\flags\hr.png" />
+    <Content Include="Assets\images\flags\hu.png" />
+    <Content Include="Assets\images\flags\id.png" />
+    <Content Include="Assets\images\flags\ie.png" />
+    <Content Include="Assets\images\flags\il.png" />
+    <Content Include="Assets\images\flags\in.png" />
+    <Content Include="Assets\images\flags\it.png" />
+    <Content Include="Assets\images\flags\jm.png" />
+    <Content Include="Assets\images\flags\jp.png" />
+    <Content Include="Assets\images\flags\lt.png" />
+    <Content Include="Assets\images\flags\md.png" />
+    <Content Include="Assets\images\flags\mk.png" />
+    <Content Include="Assets\images\flags\mx.png" />
+    <Content Include="Assets\images\flags\my.png" />
+    <Content Include="Assets\images\flags\ng.png" />
+    <Content Include="Assets\images\flags\nl.png" />
+    <Content Include="Assets\images\flags\no.png" />
+    <Content Include="Assets\images\flags\pe.png" />
+    <Content Include="Assets\images\flags\ph.png" />
+    <Content Include="Assets\images\flags\pk.png" />
+    <Content Include="Assets\images\flags\pl.png" />
+    <Content Include="Assets\images\flags\pt.png" />
+    <Content Include="Assets\images\flags\py.png" />
+    <Content Include="Assets\images\flags\ro.png" />
+    <Content Include="Assets\images\flags\rs.png" />
+    <Content Include="Assets\images\flags\ru.png" />
+    <Content Include="Assets\images\flags\sa.png" />
+    <Content Include="Assets\images\flags\se.png" />
+    <Content Include="Assets\images\flags\sk.png" />
+    <Content Include="Assets\images\flags\sl.png" />
+    <Content Include="Assets\images\flags\th.png" />
+    <Content Include="Assets\images\flags\tr.png" />
+    <Content Include="Assets\images\flags\ua.png" />
+    <Content Include="Assets\images\flags\za.png" />
+    <Content Include="Assets\images\icon-view.gif" />
+    <Content Include="Assets\images\icon_search.png" />
+    <Content Include="Assets\images\info_icons.png" />
+    <Content Include="Assets\images\intro.png" />
+    <Content Include="Assets\images\intro_controls.png" />
+    <Content Include="Assets\images\intro_controls_small.png" />
+    <Content Include="Assets\images\intro_product.png" />
+    <Content Include="Assets\images\intro_texture.png" />
+    <Content Include="Assets\images\i_cart.png" />
+    <Content Include="Assets\images\i_cart_24.png" />
+    <Content Include="Assets\images\i_cart_32.png" />
+    <Content Include="Assets\images\i_cart_white.png" />
+    <Content Include="Assets\images\i_contacts_24.png" />
+    <Content Include="Assets\images\i_facebook_24.png" />
+    <Content Include="Assets\images\i_fax_32.png" />
+    <Content Include="Assets\images\i_mail_32.png" />
+    <Content Include="Assets\images\i_mobile_32.png" />
+    <Content Include="Assets\images\i_phone_32.png" />
+    <Content Include="Assets\images\i_save_10.png" />
+    <Content Include="Assets\images\i_skype_32.png" />
+    <Content Include="Assets\images\i_star_10.png" />
+    <Content Include="Assets\images\i_star_16.png" />
+    <Content Include="Assets\images\i_star_24.png" />
+    <Content Include="Assets\images\i_star_32.png" />
+    <Content Include="Assets\images\i_star_gray_10.png" />
+    <Content Include="Assets\images\i_star_gray_16.png" />
+    <Content Include="Assets\images\i_star_gray_24.png" />
+    <Content Include="Assets\images\i_star_gray_32.png" />
+    <Content Include="Assets\images\i_twitter_24.png" />
+    <Content Include="Assets\images\letter.png" />
+    <Content Include="Assets\images\menu_home.png" />
+    <Content Include="Assets\images\payments\2checkout_straight_32px.png" />
+    <Content Include="Assets\images\payments\american_express_straight_32px.png" />
+    <Content Include="Assets\images\payments\cirrus_straight_32px.png" />
+    <Content Include="Assets\images\payments\delta_straight_32px.png" />
+    <Content Include="Assets\images\payments\direct_debit_straight_32px.png" />
+    <Content Include="Assets\images\payments\discover_straight_32px.png" />
+    <Content Include="Assets\images\payments\ebay_straight_32px.png" />
+    <Content Include="Assets\images\payments\google_checkout_straight_32px.png" />
+    <Content Include="Assets\images\payments\mastercard_straight_32px.png" />
+    <Content Include="Assets\images\payments\moneybookers_straight_32px.png" />
+    <Content Include="Assets\images\payments\paypal_straight_32px.png" />
+    <Content Include="Assets\images\payments\sagepay_straight_32px.png" />
+    <Content Include="Assets\images\payments\solo_straight_32px.png" />
+    <Content Include="Assets\images\payments\switch_straight_32px.png" />
+    <Content Include="Assets\images\payments\visa_electron_straight_32px.png" />
+    <Content Include="Assets\images\payments\visa_straight_32px.png" />
+    <Content Include="Assets\images\payments\western_union_straight_32px.png" />
+    <Content Include="Assets\images\prettyPhoto\dark_rounded\btnNext.png" />
+    <Content Include="Assets\images\prettyPhoto\dark_rounded\btnPrevious.png" />
+    <Content Include="Assets\images\prettyPhoto\dark_rounded\contentPattern.png" />
+    <Content Include="Assets\images\prettyPhoto\dark_rounded\default_thumbnail.gif" />
+    <Content Include="Assets\images\prettyPhoto\dark_rounded\loader.gif" />
+    <Content Include="Assets\images\prettyPhoto\dark_rounded\sprite.png" />
+    <Content Include="Assets\images\prettyPhoto\dark_square\btnNext.png" />
+    <Content Include="Assets\images\prettyPhoto\dark_square\btnPrevious.png" />
+    <Content Include="Assets\images\prettyPhoto\dark_square\contentPattern.png" />
+    <Content Include="Assets\images\prettyPhoto\dark_square\default_thumbnail.gif" />
+    <Content Include="Assets\images\prettyPhoto\dark_square\loader.gif" />
+    <Content Include="Assets\images\prettyPhoto\dark_square\sprite.png" />
+    <Content Include="Assets\images\prettyPhoto\facebook\btnNext.png" />
+    <Content Include="Assets\images\prettyPhoto\facebook\btnPrevious.png" />
+    <Content Include="Assets\images\prettyPhoto\facebook\contentPatternBottom.png" />
+    <Content Include="Assets\images\prettyPhoto\facebook\contentPatternLeft.png" />
+    <Content Include="Assets\images\prettyPhoto\facebook\contentPatternRight.png" />
+    <Content Include="Assets\images\prettyPhoto\facebook\contentPatternTop.png" />
+    <Content Include="Assets\images\prettyPhoto\facebook\default_thumbnail.gif" />
+    <Content Include="Assets\images\prettyPhoto\facebook\loader.gif" />
+    <Content Include="Assets\images\prettyPhoto\facebook\sprite.png" />
+    <Content Include="Assets\images\prettyPhoto\light_rounded\btnNext.png" />
+    <Content Include="Assets\images\prettyPhoto\light_rounded\btnPrevious.png" />
+    <Content Include="Assets\images\prettyPhoto\light_rounded\default_thumbnail.gif" />
+    <Content Include="Assets\images\prettyPhoto\light_rounded\loader.gif" />
+    <Content Include="Assets\images\prettyPhoto\light_rounded\sprite.png" />
+    <Content Include="Assets\images\prettyPhoto\light_square\btnNext.png" />
+    <Content Include="Assets\images\prettyPhoto\light_square\btnPrevious.png" />
+    <Content Include="Assets\images\prettyPhoto\light_square\default_thumbnail.gif" />
+    <Content Include="Assets\images\prettyPhoto\light_square\loader.gif" />
+    <Content Include="Assets\images\prettyPhoto\light_square\sprite.png" />
+    <Content Include="Assets\images\price_1.png" />
+    <Content Include="Assets\images\price_2.png" />
+    <Content Include="Assets\images\price_3.png" />
+    <Content Include="Assets\images\price_4.png" />
+    <Content Include="Assets\images\product_140x140.jpg" />
+    <Content Include="Assets\images\product_180x180.jpg" />
+    <Content Include="Assets\images\product_300x300.jpg" />
+    <Content Include="Assets\images\product_38x38.jpg" />
+    <Content Include="Assets\images\quotes.png" />
+    <Content Include="Assets\images\shoppica_logo.png" />
+    <Content Include="Assets\images\shoppica_logo_green.png" />
+    <Content Include="Assets\images\shop_info.gif" />
+    <Content Include="Assets\images\tag.png" />
+    <Content Include="Assets\images\texture_1.png" />
+    <Content Include="Assets\images\texture_2.png" />
+    <Content Include="Assets\images\texture_3.png" />
+    <Content Include="Assets\images\view_mode.gif" />
+    <Content Include="Assets\images\~intro.png" />
+    <Content Include="Assets\images\~intro_texture.png" />
+    <Content Include="Assets\plugin\autocomplete\jquery.autocomplete.css" />
+    <Content Include="Assets\plugin\autocomplete\jquery.autocomplete.js" />
+    <Content Include="Assets\plugin\autocomplete\jquery.autocomplete.min.js" />
+    <Content Include="Assets\plugin\autocomplete\jquery.autocomplete.pack.js" />
+    <Content Include="Control\BaseCategoryList.ascx" />
+    <Content Include="Control\BrandList.ascx" />
+    <Content Include="Control\Footer.ascx" />
+    <Content Include="Control\Header.ascx" />
+    <Content Include="Control\LastAddedProducts.ascx" />
+    <Content Include="Control\LatestProducts.ascx" />
+    <Content Include="Control\ProductTags.ascx" />
+    <Content Include="Control\RelatedProducts.ascx" />
+    <Content Include="Control\SliderProducts.ascx" />
+    <Content Include="Control\SpecialProductList.ascx" />
+    <Content Include="Control\SpecialProducts.ascx" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Images\Products\348700d5-89ac-46e5-a01d-c4dd93bbc56e.jpg" />
+    <Content Include="Images\Products\3d6a5c94-0c48-45b6-80af-f19ac9732850.jpg" />
+    <Content Include="Images\Products\3f7c1e52-a4d4-4b2f-a314-92dc0585625e.jpg" />
+    <Content Include="Images\Products\45335aae-1d94-42b4-83c9-6fa5d24a430a.jpg" />
+    <Content Include="Images\Products\4bf111e5-b02c-47f1-a4ec-070778cc8a53.jpg" />
+    <Content Include="Images\Products\56cca2da-16f6-4bba-bbe5-62a099d2edba.jpg" />
+    <Content Include="Images\Products\68f2ee45-00f3-4d82-b2cd-9791f151cd7e.jpg" />
+    <Content Include="Images\Products\7cab963f-321d-49c9-9861-7ee735d8c1a8.jpg" />
+    <Content Include="Images\Products\8b23b8f9-cd74-4f31-bace-8e2d7f3bb114.jpg" />
+    <Content Include="Images\Products\8c4a6225-6f42-4e31-aeb1-4f0bc4c85d3a.jpg" />
+    <Content Include="Images\Products\a035fcbf-1232-4e93-a2de-74c58d055a61.jpg" />
+    <Content Include="Images\Products\a14f995f-6ea7-41af-8de4-5ead72989881.jpg" />
+    <Content Include="Images\Products\a42c8ebb-c719-4b17-a479-c7e2bb4c49fd.jpg" />
+    <Content Include="Images\Products\badbc7fa-3a6b-4adc-9599-b0e1ed2f68bd.jpg" />
+    <Content Include="Images\Products\bce95ef7-211f-4e79-bd9d-43551b4f4616.jpg" />
+    <Content Include="Images\Products\bd3d6d2f-af66-476d-83ed-20d88304bcbc.jpg" />
+    <Content Include="Images\Products\c4a283e8-9a86-412c-9201-4446ba4b8666.jpg" />
+    <Content Include="Images\Products\cb61d58e-64a4-47fd-a1cd-5114afbdb7d2.jpg" />
+    <Content Include="Images\Products\cced5e3c-c3c1-4c9d-a91b-db7c5a862c70.jpg" />
+    <Content Include="Images\Products\d0feb31a-5623-4f6b-a18e-c950cec414d6.jpg" />
+    <Content Include="Images\Products\df29c55c-0709-4ad1-9d99-a9b143180781.jpg" />
+    <Content Include="Images\Products\ea16c0c2-53fe-4c7c-bec6-3f84fa9d96bb.jpg" />
+    <Content Include="Images\Products\ea83a945-8b0f-4d3b-aaad-58b06b69fa3b.jpg" />
+    <Content Include="Images\Products\ef578b2b-ab1f-404d-9450-857ad6eca52c.jpg" />
+    <Content Include="Images\Products\f465f04b-4384-4bd0-8149-b907bf9c56e0.jpg" />
+    <Content Include="Assets\js\ajax_add.js" />
+    <Content Include="Assets\js\jquery\colorpicker\colorpicker.js" />
+    <Content Include="Assets\js\jquery\jquery.cookie.js" />
+    <Content Include="Assets\js\jquery\jquery.prettyPhoto.js" />
+    <Content Include="Assets\js\jquery\jquery.slides.js" />
+    <Content Include="Assets\js\jquery\slides.min.jquery.js" />
+    <Content Include="Assets\js\PIE.htc" />
+    <Content Include="Assets\js\PIE.js" />
+    <Content Include="Assets\js\shoppica.images_slide.js" />
+    <Content Include="Assets\js\shoppica.js" />
+    <Content Include="Assets\js\shoppica.products_slide.js" />
+    <Content Include="Assets\stylesheet\960.css" />
+    <Content Include="Assets\stylesheet\color.css" />
+    <Content Include="Assets\stylesheet\colorpicker\colorpicker.css" />
+    <Content Include="Assets\stylesheet\cp.css" />
+    <Content Include="Assets\stylesheet\ie.css" />
+    <Content Include="Assets\stylesheet\prettyPhoto.css" />
+    <Content Include="Assets\stylesheet\screen.css" />
+    <Content Include="ProductDetail.aspx" />
+    <Content Include="ProductList.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Control\BaseCategoryList.ascx.cs">
+      <DependentUpon>BaseCategoryList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Control\BaseCategoryList.ascx.designer.cs">
+      <DependentUpon>BaseCategoryList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Control\BrandList.ascx.cs">
+      <DependentUpon>BrandList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Control\BrandList.ascx.designer.cs">
+      <DependentUpon>BrandList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Control\Footer.ascx.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Control\Footer.ascx.designer.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Control\Header.ascx.cs">
+      <DependentUpon>Header.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Control\Header.ascx.designer.cs">
+      <DependentUpon>Header.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Control\LastAddedProducts.ascx.cs">
+      <DependentUpon>LastAddedProducts.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Control\LastAddedProducts.ascx.designer.cs">
+      <DependentUpon>LastAddedProducts.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Control\LatestProducts.ascx.cs">
+      <DependentUpon>LatestProducts.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Control\LatestProducts.ascx.designer.cs">
+      <DependentUpon>LatestProducts.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Control\ProductTags.ascx.cs">
+      <DependentUpon>ProductTags.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Control\ProductTags.ascx.designer.cs">
+      <DependentUpon>ProductTags.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Control\RelatedProducts.ascx.cs">
+      <DependentUpon>RelatedProducts.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Control\RelatedProducts.ascx.designer.cs">
+      <DependentUpon>RelatedProducts.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Control\SliderProducts.ascx.cs">
+      <DependentUpon>SliderProducts.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Control\SliderProducts.ascx.designer.cs">
+      <DependentUpon>SliderProducts.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Control\SpecialProductList.ascx.cs">
+      <DependentUpon>SpecialProductList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Control\SpecialProductList.ascx.designer.cs">
+      <DependentUpon>SpecialProductList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Control\SpecialProducts.ascx.cs">
+      <DependentUpon>SpecialProducts.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Control\SpecialProducts.ascx.designer.cs">
+      <DependentUpon>SpecialProducts.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\AutoComplete.ashx.cs">
+      <DependentUpon>AutoComplete.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ProductDetail.aspx.cs">
+      <DependentUpon>ProductDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProductDetail.aspx.designer.cs">
+      <DependentUpon>ProductDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProductList.aspx.cs">
+      <DependentUpon>ProductList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProductList.aspx.designer.cs">
+      <DependentUpon>ProductList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Browsers\ie.browser" />
+    <Content Include="App_Browsers\firefox.browser" />
+    <None Include="Assets\fonts\Babel\BabelSans.eot" />
+    <None Include="Assets\fonts\Babel\BabelSans.ttf" />
+    <None Include="Assets\fonts\Babel\BabelSans.woff" />
+    <None Include="Assets\fonts\Ubuntu\Ubuntu-B-webfont.eot" />
+    <None Include="Assets\fonts\Ubuntu\Ubuntu-B-webfont.ttf" />
+    <None Include="Assets\fonts\Ubuntu\Ubuntu-B-webfont.woff" />
+    <None Include="Assets\fonts\Ubuntu\Ubuntu-BI-webfont.eot" />
+    <None Include="Assets\fonts\Ubuntu\Ubuntu-BI-webfont.ttf" />
+    <None Include="Assets\fonts\Ubuntu\Ubuntu-BI-webfont.woff" />
+    <None Include="Assets\fonts\Ubuntu\Ubuntu-I-webfont.eot" />
+    <None Include="Assets\fonts\Ubuntu\Ubuntu-I-webfont.ttf" />
+    <None Include="Assets\fonts\Ubuntu\Ubuntu-I-webfont.woff" />
+    <None Include="Assets\fonts\Ubuntu\Ubuntu-R-webfont.eot" />
+    <None Include="Assets\fonts\Ubuntu\Ubuntu-R-webfont.ttf" />
+    <None Include="Assets\fonts\Ubuntu\Ubuntu-R-webfont.woff" />
+    <None Include="Assets\js\PIE.php" />
+    <Content Include="Site.Master" />
+    <Content Include="Handler\AutoComplete.ashx" />
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ProductSearchEngine.Business\ProductSearchEngine.Business.csproj">
+      <Project>{EB588B36-4419-4436-B813-6EDE25841C08}</Project>
+      <Name>ProductSearchEngine.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ProductSearchEngine.ExtensionWebControls\ProductSearchEngine.ExtensionWebControls.csproj">
+      <Project>{D12EF64B-C993-4531-8751-3E0593D1ED8D}</Project>
+      <Name>ProductSearchEngine.ExtensionWebControls</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>42413</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

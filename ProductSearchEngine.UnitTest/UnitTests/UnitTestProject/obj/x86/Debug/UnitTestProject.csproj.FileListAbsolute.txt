@@ -1,0 +1,12 @@
+C:\Users\Kaan\Documents\Visual Studio 2010\Projects\ProductSearchEngine\ProductSearchEngine.UnitTest\UnitTests\UnitTestProject\bin\Debug\UnitTestProject.exe
+C:\Users\Kaan\Documents\Visual Studio 2010\Projects\ProductSearchEngine\ProductSearchEngine.UnitTest\UnitTests\UnitTestProject\bin\Debug\UnitTestProject.pdb
+C:\Users\Kaan\Documents\Visual Studio 2010\Projects\ProductSearchEngine\ProductSearchEngine.UnitTest\UnitTests\UnitTestProject\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Kaan\Documents\Visual Studio 2010\Projects\ProductSearchEngine\ProductSearchEngine.UnitTest\UnitTests\UnitTestProject\obj\x86\Debug\UnitTestProject.exe
+C:\Users\Kaan\Documents\Visual Studio 2010\Projects\ProductSearchEngine\ProductSearchEngine.UnitTest\UnitTests\UnitTestProject\obj\x86\Debug\UnitTestProject.pdb
+C:\Users\Kaan\Documents\Visual Studio 2010\Projects\ProductSearchEngine\ProductSearchEngine.UnitTest\UnitTests\UnitTestProject\bin\Debug\UnitTestProject.exe.config
+C:\Users\Kaan\Documents\Visual Studio 2010\Projects\ProductSearchEngine\ProductSearchEngine.UnitTest\UnitTests\UnitTestProject\bin\Debug\ProductSearchEngine.dll
+C:\Users\Kaan\Documents\Visual Studio 2010\Projects\ProductSearchEngine\ProductSearchEngine.UnitTest\UnitTests\UnitTestProject\bin\Debug\SD.LLBLGen.Pro.ORMSupportClasses.NET20.dll
+C:\Users\Kaan\Documents\Visual Studio 2010\Projects\ProductSearchEngine\ProductSearchEngine.UnitTest\UnitTests\UnitTestProject\bin\Debug\SD.LLBLGen.Pro.LinqSupportClasses.NET35.dll
+C:\Users\Kaan\Documents\Visual Studio 2010\Projects\ProductSearchEngine\ProductSearchEngine.UnitTest\UnitTests\UnitTestProject\bin\Debug\SD.LLBLGen.Pro.DQE.SqlServer.NET20.dll
+C:\Users\Kaan\Documents\Visual Studio 2010\Projects\ProductSearchEngine\ProductSearchEngine.UnitTest\UnitTests\UnitTestProject\bin\Debug\SD.LLBLGen.Pro.LinqSupportClasses.NET35.pdb
+C:\Users\Kaan\Documents\Visual Studio 2010\Projects\ProductSearchEngine\ProductSearchEngine.UnitTest\UnitTests\UnitTestProject\bin\Debug\SD.LLBLGen.Pro.DQE.SqlServer.NET20.pdb

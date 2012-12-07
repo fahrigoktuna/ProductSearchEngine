@@ -1,0 +1,6 @@
+C:\Users\Kaan\Documents\Visual Studio 2010\Projects\ProductSearchEngine\ProductSearchEngine.ConsoleUnitTests\bin\Debug\ProductSearchEngine.ConsoleUnitTests.exe
+C:\Users\Kaan\Documents\Visual Studio 2010\Projects\ProductSearchEngine\ProductSearchEngine.ConsoleUnitTests\bin\Debug\ProductSearchEngine.ConsoleUnitTests.pdb
+C:\Users\Kaan\Documents\Visual Studio 2010\Projects\ProductSearchEngine\ProductSearchEngine.ConsoleUnitTests\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Kaan\Documents\Visual Studio 2010\Projects\ProductSearchEngine\ProductSearchEngine.ConsoleUnitTests\obj\x86\Debug\ProductSearchEngine.ConsoleUnitTests.exe
+C:\Users\Kaan\Documents\Visual Studio 2010\Projects\ProductSearchEngine\ProductSearchEngine.ConsoleUnitTests\obj\x86\Debug\ProductSearchEngine.ConsoleUnitTests.pdb
+C:\Users\Kaan\Documents\Visual Studio 2010\Projects\ProductSearchEngine\ProductSearchEngine.ConsoleUnitTests\bin\Debug\ProductSearchEngine.ConsoleUnitTests.exe.config

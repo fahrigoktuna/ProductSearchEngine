@@ -1,0 +1,76 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs"  Inherits="ProductSearchEngine.Web.Site" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<%@ Register Src="~/Control/Header.ascx" TagName="Header" TagPrefix="uc" %>
+<%@ Register Src="~/Control/Footer.ascx" TagName="Footer" TagPrefix="uc" %>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Product Search Engine</title>
+    <meta name="description" content="Fahri Kaan Göktuna - Product Search Engine" />
+    <link rel="stylesheet" type="text/css" href="/Assets/stylesheet/960.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="/Assets/stylesheet/screen.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="/Assets/stylesheet/color.css" media="screen" />
+    <!--[if lt IE 9]>
+<link rel="stylesheet" type="text/css" href="/Assets/stylesheet/ie.css" media="screen" />
+<![endif]-->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.11/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="/Assets/js/shoppica.js"></script>
+    <script type="text/javascript">
+        function loadjscssfile(filename, filetype) {
+            if (filetype == "js") { //if filename is a external JavaScript file
+                var fileref = document.createElement('script')
+                fileref.setAttribute("type", "text/javascript")
+                fileref.setAttribute("src", filename)
+            }
+            else if (filetype == "css") { //if filename is an external CSS file
+                var fileref = document.createElement("link")
+                fileref.setAttribute("rel", "stylesheet")
+                fileref.setAttribute("type", "text/css")
+                fileref.setAttribute("href", filename)
+            }
+            if (typeof fileref != "undefined")
+                document.getElementsByTagName("head")[0].appendChild(fileref)
+        }
+        function load() {
+           
+            Sys.WebForms.PageRequestManager.getInstance().add_endRequest(EndRequestHandler);
+        }
+        function EndRequestHandler() {
+           // Check to see if there's an error on this request.
+       
+            loadjscssfile("/Assets/js/shoppica.js", "js") //dynamically load and add this .js file
+        } </script>
+    
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body onload="load()">
+    <form id="form1" runat="server">
+    <asp:ScriptManager ID="ScriptManager1" runat="server">
+    </asp:ScriptManager>
+    <div id="wrapper">
+        <uc:Header ID="HeaderUserControl" runat="server" />
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+        <uc:Footer ID="FooterUserControl" runat="server" />
+    </div>
+    <div id="fb-root">
+    </div>
+    <script type="text/javascript">
+        //        window.fbAsyncInit = function () {
+        //            FB.init({ appId: '0c18007de6f00f7ecda8c040fb76cd90', status: true, cookie: true,
+        //                xfbml: true
+        //            });
+        //        };
+        //        (function () {
+        //            var e = document.createElement('script'); e.async = true;
+        //            e.src = document.location.protocol +
+        //    '//connect.facebook.net/en_US/all.js';
+        //            document.getElementById('fb-root').appendChild(e);
+        //        } ());
+    </script>
+    </form>
+</body>
+</html>

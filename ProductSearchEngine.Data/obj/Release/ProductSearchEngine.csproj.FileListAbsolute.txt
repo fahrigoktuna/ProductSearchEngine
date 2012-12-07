@@ -1,0 +1,13 @@
+C:\Users\Kaan\Documents\Visual Studio 2010\Projects\ProductSearchEngine\ProductSearchEngine.Data\bin\Release\ProductSearchEngine.dll.config
+C:\Users\Kaan\Documents\Visual Studio 2010\Projects\ProductSearchEngine\ProductSearchEngine.Data\bin\Release\ProductSearchEngine.dll
+C:\Users\Kaan\Documents\Visual Studio 2010\Projects\ProductSearchEngine\ProductSearchEngine.Data\bin\Release\ProductSearchEngine.pdb
+C:\Users\Kaan\Documents\Visual Studio 2010\Projects\ProductSearchEngine\ProductSearchEngine.Data\bin\Release\SD.LLBLGen.Pro.DQE.SqlServer.NET20.dll
+C:\Users\Kaan\Documents\Visual Studio 2010\Projects\ProductSearchEngine\ProductSearchEngine.Data\bin\Release\SD.LLBLGen.Pro.LinqSupportClasses.NET35.dll
+C:\Users\Kaan\Documents\Visual Studio 2010\Projects\ProductSearchEngine\ProductSearchEngine.Data\bin\Release\SD.LLBLGen.Pro.ORMSupportClasses.NET20.dll
+C:\Users\Kaan\Documents\Visual Studio 2010\Projects\ProductSearchEngine\ProductSearchEngine.Data\bin\Release\SD.LLBLGen.Pro.LinqSupportClasses.NET35.pdb
+C:\Users\Kaan\Documents\Visual Studio 2010\Projects\ProductSearchEngine\ProductSearchEngine.Data\bin\Release\SD.LLBLGen.Pro.ORMSupportClasses.NET20.pdb
+C:\Users\Kaan\Documents\Visual Studio 2010\Projects\ProductSearchEngine\ProductSearchEngine.Data\bin\Release\SD.LLBLGen.Pro.ORMSupportClasses.NET20.xml
+C:\Users\Kaan\Documents\Visual Studio 2010\Projects\ProductSearchEngine\ProductSearchEngine.Data\bin\Release\SD.LLBLGen.Pro.DQE.SqlServer.NET20.pdb
+C:\Users\Kaan\Documents\Visual Studio 2010\Projects\ProductSearchEngine\ProductSearchEngine.Data\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Kaan\Documents\Visual Studio 2010\Projects\ProductSearchEngine\ProductSearchEngine.Data\obj\Release\ProductSearchEngine.dll
+C:\Users\Kaan\Documents\Visual Studio 2010\Projects\ProductSearchEngine\ProductSearchEngine.Data\obj\Release\ProductSearchEngine.pdb

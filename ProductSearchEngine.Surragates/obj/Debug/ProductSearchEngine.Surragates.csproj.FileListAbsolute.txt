@@ -1,0 +1,5 @@
+C:\Users\Kaan\Documents\Visual Studio 2010\Projects\ProductSearchEngine\ProductSearchEngine.Surragates\bin\Debug\ProductSearchEngine.Surragates.dll
+C:\Users\Kaan\Documents\Visual Studio 2010\Projects\ProductSearchEngine\ProductSearchEngine.Surragates\bin\Debug\ProductSearchEngine.Surragates.pdb
+C:\Users\Kaan\Documents\Visual Studio 2010\Projects\ProductSearchEngine\ProductSearchEngine.Surragates\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Kaan\Documents\Visual Studio 2010\Projects\ProductSearchEngine\ProductSearchEngine.Surragates\obj\Debug\ProductSearchEngine.Surragates.dll
+C:\Users\Kaan\Documents\Visual Studio 2010\Projects\ProductSearchEngine\ProductSearchEngine.Surragates\obj\Debug\ProductSearchEngine.Surragates.pdb

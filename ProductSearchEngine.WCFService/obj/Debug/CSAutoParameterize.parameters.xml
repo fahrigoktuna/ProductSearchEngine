@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="ConnectionString.SQL Server (SqlClient)-Web.config Connection String" description="ConnectionString.SQL Server (SqlClient) Connection String used in web.config by the application to access the database." defaultvalue="data source=localhost;initial catalog=ProductSearchEngine;User ID=sa;Password=241312;persist security info=False;packet size=4096" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="obj\\Debug\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='ConnectionString.SQL Server (SqlClient)']/@connectionString" />
+  </parameter>
+</parameters>

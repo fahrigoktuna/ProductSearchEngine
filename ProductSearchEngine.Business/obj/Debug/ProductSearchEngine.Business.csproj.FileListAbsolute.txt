@@ -1,0 +1,11 @@
+C:\Users\Kaan\Documents\Visual Studio 2010\Projects\ProductSearchEngine\ProductSearchEngine.Business\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Kaan\Documents\Visual Studio 2010\Projects\ProductSearchEngine\ProductSearchEngine.Business\bin\Debug\ProductSearchEngine.Business.dll
+C:\Users\Kaan\Documents\Visual Studio 2010\Projects\ProductSearchEngine\ProductSearchEngine.Business\bin\Debug\ProductSearchEngine.Business.pdb
+C:\Users\Kaan\Documents\Visual Studio 2010\Projects\ProductSearchEngine\ProductSearchEngine.Business\bin\Debug\ProductSearchEngine.dll
+C:\Users\Kaan\Documents\Visual Studio 2010\Projects\ProductSearchEngine\ProductSearchEngine.Business\bin\Debug\SD.LLBLGen.Pro.ORMSupportClasses.NET20.dll
+C:\Users\Kaan\Documents\Visual Studio 2010\Projects\ProductSearchEngine\ProductSearchEngine.Business\bin\Debug\SD.LLBLGen.Pro.LinqSupportClasses.NET35.dll
+C:\Users\Kaan\Documents\Visual Studio 2010\Projects\ProductSearchEngine\ProductSearchEngine.Business\bin\Debug\SD.LLBLGen.Pro.DQE.SqlServer.NET20.dll
+C:\Users\Kaan\Documents\Visual Studio 2010\Projects\ProductSearchEngine\ProductSearchEngine.Business\bin\Debug\SD.LLBLGen.Pro.LinqSupportClasses.NET35.pdb
+C:\Users\Kaan\Documents\Visual Studio 2010\Projects\ProductSearchEngine\ProductSearchEngine.Business\bin\Debug\SD.LLBLGen.Pro.DQE.SqlServer.NET20.pdb
+C:\Users\Kaan\Documents\Visual Studio 2010\Projects\ProductSearchEngine\ProductSearchEngine.Business\obj\Debug\ProductSearchEngine.Business.dll
+C:\Users\Kaan\Documents\Visual Studio 2010\Projects\ProductSearchEngine\ProductSearchEngine.Business\obj\Debug\ProductSearchEngine.Business.pdb

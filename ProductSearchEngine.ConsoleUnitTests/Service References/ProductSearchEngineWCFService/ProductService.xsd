@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://localhost:22518/ProductService.svc/GetSliderProducts" elementFormDefault="qualified" targetNamespace="http://localhost:22518/ProductService.svc/GetSliderProducts" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:22518/ProductService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/ProductSearchEngine.Surragates" />
+  <xs:element name="GetSliderProducts">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSliderProductsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/ProductSearchEngine.Surragates" minOccurs="0" name="GetSliderProductsResult" nillable="true" type="q1:ArrayOfProduct" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

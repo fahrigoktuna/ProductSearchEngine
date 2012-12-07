@@ -1,0 +1,15 @@
+C:\Users\Kaan\Documents\Visual Studio 2010\Projects\ProductSearchEngine\ProductSearchEngine.WCFService\bin\ProductSearchEngine.WCFService.dll
+C:\Users\Kaan\Documents\Visual Studio 2010\Projects\ProductSearchEngine\ProductSearchEngine.WCFService\bin\ProductSearchEngine.WCFService.pdb
+C:\Users\Kaan\Documents\Visual Studio 2010\Projects\ProductSearchEngine\ProductSearchEngine.WCFService\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Kaan\Documents\Visual Studio 2010\Projects\ProductSearchEngine\ProductSearchEngine.WCFService\obj\Debug\ProductSearchEngine.WCFService.dll
+C:\Users\Kaan\Documents\Visual Studio 2010\Projects\ProductSearchEngine\ProductSearchEngine.WCFService\obj\Debug\ProductSearchEngine.WCFService.pdb
+C:\Users\Kaan\Documents\Visual Studio 2010\Projects\ProductSearchEngine\ProductSearchEngine.WCFService\bin\ProductSearchEngine.Business.dll
+C:\Users\Kaan\Documents\Visual Studio 2010\Projects\ProductSearchEngine\ProductSearchEngine.WCFService\bin\ProductSearchEngine.dll
+C:\Users\Kaan\Documents\Visual Studio 2010\Projects\ProductSearchEngine\ProductSearchEngine.WCFService\bin\ProductSearchEngine.Surragates.dll
+C:\Users\Kaan\Documents\Visual Studio 2010\Projects\ProductSearchEngine\ProductSearchEngine.WCFService\bin\SD.LLBLGen.Pro.ORMSupportClasses.NET20.dll
+C:\Users\Kaan\Documents\Visual Studio 2010\Projects\ProductSearchEngine\ProductSearchEngine.WCFService\bin\SD.LLBLGen.Pro.LinqSupportClasses.NET35.dll
+C:\Users\Kaan\Documents\Visual Studio 2010\Projects\ProductSearchEngine\ProductSearchEngine.WCFService\bin\SD.LLBLGen.Pro.DQE.SqlServer.NET20.dll
+C:\Users\Kaan\Documents\Visual Studio 2010\Projects\ProductSearchEngine\ProductSearchEngine.WCFService\bin\ProductSearchEngine.Business.pdb
+C:\Users\Kaan\Documents\Visual Studio 2010\Projects\ProductSearchEngine\ProductSearchEngine.WCFService\bin\ProductSearchEngine.Surragates.pdb
+C:\Users\Kaan\Documents\Visual Studio 2010\Projects\ProductSearchEngine\ProductSearchEngine.WCFService\bin\SD.LLBLGen.Pro.LinqSupportClasses.NET35.pdb
+C:\Users\Kaan\Documents\Visual Studio 2010\Projects\ProductSearchEngine\ProductSearchEngine.WCFService\bin\SD.LLBLGen.Pro.DQE.SqlServer.NET20.pdb

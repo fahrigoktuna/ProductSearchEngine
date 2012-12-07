@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="http://localhost:80" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="PSEWCFService" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="True" profileName="Profile1" publishMethod="MSDeploy" replaceMatchingFiles="True" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="bin/ProductSearchEngine.dll" publishTime="01/14/2012 02:55:13" />
+    <file relUrl="bin/SD.LLBLGen.Pro.LinqSupportClasses.NET35.dll" publishTime="04/29/2011 16:53:42" />
+    <file relUrl="bin/ProductSearchEngine.Business.pdb" publishTime="01/19/2012 03:44:42" />
+    <file relUrl="bin/SD.LLBLGen.Pro.DQE.SqlServer.NET20.pdb" publishTime="04/29/2011 16:53:36" />
+    <file relUrl="ProductService.svc" publishTime="04/15/2012 20:20:43" />
+    <file relUrl="bin/ProductSearchEngine.Surragates.dll" publishTime="04/15/2012 20:18:23" />
+    <file relUrl="bin/SD.LLBLGen.Pro.LinqSupportClasses.NET35.pdb" publishTime="04/29/2011 16:53:40" />
+    <file relUrl="bin/ProductSearchEngine.WCFService.dll" publishTime="04/15/2012 20:41:18" />
+    <file relUrl="Web.config" publishTime="04/15/2012 20:46:14" />
+    <file relUrl="bin/ProductSearchEngine.Business.dll" publishTime="01/19/2012 03:44:42" />
+    <file relUrl="bin/ProductSearchEngine.WCFService.pdb" publishTime="04/15/2012 20:41:18" />
+    <file relUrl="bin/ProductSearchEngine.Surragates.pdb" publishTime="04/15/2012 20:18:23" />
+    <file relUrl="bin/SD.LLBLGen.Pro.DQE.SqlServer.NET20.dll" publishTime="04/29/2011 16:53:36" />
+    <file relUrl="bin/SD.LLBLGen.Pro.ORMSupportClasses.NET20.dll" publishTime="04/29/2011 16:53:34" />
+  </publishProfile>
+</publishData>
